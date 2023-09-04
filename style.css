@@ -1,0 +1,74 @@
+@import url('https://fonts.cdnfonts.com/css/edit-undo-brk');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: burlywood;
+}
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.board-music {
+    color:  rgb(40, 117, 63);
+    border: solid 8px;
+    width: 200px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.text {
+    color: white;
+    text-align: center;
+    font-family: 'Edit Undo BRK', sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(40, 117, 63);
+}
+
+
+#canvas1 {
+    border: 5px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#player, #layer1, #layer2, #layer3, #room, #layer4, #layer5, #enemy_fly, #enemy_cat, #enemy_boy, #room2{
+    display: none;
+}
+
+#seta_esquerda {
+    display: flex;
+    margin-left: 250px;
+    margin-top: 190px;
+    cursor: pointer;
+}
+
+#seta_direita {
+    display: flex;
+    cursor: pointer;
+    margin-left: 980px;
+    margin-top: -75px;
+}
+
+#mochila {
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+#mochila:hover{
+    transform: scale(1.1);
+}
